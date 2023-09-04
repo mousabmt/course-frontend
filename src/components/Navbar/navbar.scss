@@ -1,0 +1,35 @@
+/* CSS */
+.dropdown {
+    position: relative; /* Ensure the dropdown menu is relative to the parent */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    max-height: 200px;
+    opacity: 1;
+    transition: max-height 1s ease, opacity 1s ease;
+  }
+  
+  .dropdown .dropdown-menu {
+    display: none;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1s ease, opacity 1s ease;
+    position: absolute; /* Position the dropdown absolutely */
+    top: 100%; /* Position it below the parent */
+    left: 0;
+    z-index: 1; /* Ensure it appears above other elements */
+    pointer-events: none; /* Prevent mouse events on the hidden menu */
+    transform: translateY(0px); /* Slight translation to move it down */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    pointer-events: auto; /* Enable mouse events on hover */
+    transform: translateY(0); /* Reset the translation */
+  }
+  
+  /* Add a slight delay to hide the dropdown */
+  .dropdown .dropdown-menu:hover {
+    display: block;
+  }
+  

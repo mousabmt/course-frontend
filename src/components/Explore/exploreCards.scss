@@ -1,0 +1,57 @@
+body {
+
+    background-color: #ffffff;
+
+  }
+
+.cardsRows {
+  width:1560px;
+  display: flex;
+  flex-wrap: wrap;
+gap: 40px;
+padding: 30px;
+
+}
+.deptsContainer {
+    display: flex;
+    
+    width: max-content; 
+    justify-content: center;
+  }
+  
+  .deptsCards {
+    display: flex ;
+    position: relative;
+    width: 340px ;
+    height: 118px;
+    background-color: #09074b;
+    font-size: 27px;
+    justify-content: center !important;
+
+    color: white;
+    padding: 25px;
+    box-shadow: 0 0 0px rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: box-shadow 0.1s linear, transform 0.4s ease; 
+    transform-origin: center;
+}
+.deptsCards .link {
+    position: absolute;
+
+    width: 90%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+  
+  .deptsCards:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    z-index: 1;
+  }
+  .deptsCards:active{
+    box-shadow: 0 0 30px rgb(4, 63, 4);
+  
+  }
