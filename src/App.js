@@ -15,10 +15,12 @@ function App() {
     <div>
 <NaviBar/>
 <Routes>
-<Route path='/' element={<Home/>}/>
-<Route  path='/Explore' element={<Explore/>}/>
-<Route  path='/courses' element={<CoursesCards/>}/>
+  <Route path='/' element={<Home />} />
+  {/* Other specific routes */}
+  <Route path='/courses/:id' element={<CoursesCards />} />
+  <Route path='/Explore/*' element={<Explore />} />
 </Routes>
+
     </div>
   );
 }

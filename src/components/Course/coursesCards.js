@@ -1,23 +1,41 @@
 import axios from "axios";
-import React, { useState } from "react";
-import { useEffect } from "react";
-export default function CoursesCards({ Id }) {
-  const [getData, setGetData] = useState([]);
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+
+export default function CoursesCards() {
+  const { id } = useParams();
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const dataFetching = async () => {
     try {
-      const res = await axios.post(`${process.env.URL}/courses/${Id}`, Id);
-
+      
+      // Make an HTTP request to fetch data based on the 'id' parameter
+      const response = await axios.get(`${process.env.REACT_APP_LOCAL_HOST}/courses/${id}`);
+      // Assuming the response.data contains your course data
+      console.log(response);
+      setLoading(false);
     } catch (error) {
       console.log(error);
+      setLoading(false);
     }
   };
+
   useEffect(() => {
     dataFetching();
-  }, []);
+  }, [id]); // Fetch data whenever the 'id' parameter changes
+
   return (
     <div>
-      <h1>TESSSSSSSSSST</h1>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <>
+          <h1>{data.title}</h1>
+          {/* Render other data as needed */}
+        </>
+      )}
     </div>
   );
 }
+

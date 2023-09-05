@@ -2,14 +2,14 @@ import React from 'react'
 import './exploreCards.scss'
 import { Link } from 'react-router-dom'
 import CoursesCards from '../Course/coursesCards'
-export default function ExploreCards({depts,setId}) {
+export default function ExploreCards({dept,setId}) {
 const handleTrav=()=>{
-    setId(depts.id)
-
+    setId(dept.id)
+console.log(dept.id);
 }
     return (
     <div className='deptsCards'onClick={handleTrav} >
-<Link  to='/courses' className='link' >{depts.name} </Link>
+<Link   to={`/courses/${dept.id}`} className='link' >{dept.name} </Link>
 
     </div>
   )
