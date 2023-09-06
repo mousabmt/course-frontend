@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import NaviBar from './components/Navbar/navbar';
 import CoursesCards from './components/Course/coursesCards';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Classes from './components/Classes/classes';
 
 function App() {
   
@@ -17,7 +18,8 @@ function App() {
 <Routes>
   <Route path='/' element={<Home />} />
   {/* Other specific routes */}
-  <Route path='/courses/:id' element={<CoursesCards />} />
+  <Route path='/courses/:id/*' element={<CoursesCards />} />
+  <Route path='/classes/:id' element={<Classes />} />
   <Route path='/Explore/*' element={<Explore />} />
 </Routes>
 

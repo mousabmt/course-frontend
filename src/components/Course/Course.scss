@@ -1,12 +1,11 @@
-/* ExploreCard.scss */
-.deptsCards {
+/* CourseCard.scss */
+.CoursesCards {
   background-color: #fff;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  cursor: pointer;
   transition: transform 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,7 @@
   height: 100%;
 }
 
-.deptsCards:hover {
+.CoursesCards:hover {
   transform: scale(1.02);
 }
 

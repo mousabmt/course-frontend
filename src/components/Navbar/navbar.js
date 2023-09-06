@@ -8,7 +8,7 @@ export default function NaviBar() {
     <Navbar collapseOnSelect expand="lg" className="bg-primary">
       <Container>
         <Navbar.Brand href="/" style={{ fontSize: "35px" }}>
-          Open Courses
+      FH College
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
