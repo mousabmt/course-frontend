@@ -35,6 +35,7 @@ export default function Classes() {
       <thead>
         <tr>
           <th>CRN</th>
+          <th>Title</th>
           <th>Start</th>
           <th>End</th>
           <th>Professor</th>

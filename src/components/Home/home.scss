@@ -1,0 +1,107 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply a background color and style the header and navigation */
+
+
+  
+  /* Style the hero section */
+  #hero {
+    background-image: url('https://smapse.com/storage/2019/11/12400684-10156348154295414-3711708129329037290-n.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the "About," "Programs," and "Contact" sections */
+.containerCollege {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .containerCollege:hover {
+    transform: scale(1.02);
+  }
+  
+  .containerCollege h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF; /* Adjust the color to your preference */
+  }
+  
+  .containerCollege p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #333; /* Adjust the color to your preference */
+  }
+  
+  /* Style the "Learn More" button */
+  .cta-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  .containerCollege a {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF; /* Adjust the color to your preference */
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+    }
+  
+    .containerCollege h2 {
+      font-size: 1.5rem;
+    }
+  
+    .containerCollege p {
+      font-size: 1rem;
+    }
+  }
+  .collegeCards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }

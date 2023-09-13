@@ -17,7 +17,7 @@ export default function NaviBar() {
         >
           <Nav className="me-auto">
             <Nav.Link href="/Explore">Explore</Nav.Link>
-            <Nav.Link href="#pricing">My schedule</Nav.Link>
+            <Nav.Link href="/Schedule">My schedule</Nav.Link>
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown" > 
               <NavDropdown.Item href="#action/3.1" style={{ fontSize: "18px" }}>
                 Instructors

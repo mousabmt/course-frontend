@@ -6,6 +6,7 @@ import NaviBar from './components/Navbar/navbar';
 import CoursesCards from './components/Course/coursesCards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Classes from './components/Classes/classes';
+import Schedule from './components/Schedule/schedule';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
   <Route path='/courses/:id/*' element={<CoursesCards />} />
   <Route path='/classes/:id' element={<Classes />} />
   <Route path='/Explore/*' element={<Explore />} />
+  <Route path='/Schedule' element={<Schedule />} />
 </Routes>
 
     </div>
